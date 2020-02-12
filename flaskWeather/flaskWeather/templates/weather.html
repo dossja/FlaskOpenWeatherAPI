@@ -1,0 +1,14 @@
+﻿{% extends 'home.html' %}
+
+{% block content %}
+<main class="weather">
+    <div id="image"><img src="{{image}}" width="130" height="130" alt="image" /></div>
+    <div id="data">
+        <div id="cityNameCoords">{{city}} <span id="coords"> {{lon}}, {{lat}}</span></div>
+        <hr>
+        <div id="temperature">Temperatura: {{temp}} &#8451;<br><span id="feel">Odczuwalna: {{tempFeels}} &#8451;</span></div>
+        <hr>
+        <div id="other">Wilgotność: {{humid}}%<br>Ciśnienie: {{press}} hPa<br>Prędkość wiatru: {{wind}} km/h</div>
+    </div>
+</main>
+{% endblock %}
